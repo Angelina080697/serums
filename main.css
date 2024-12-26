@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+*:focus, *:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+html.lock {
+  overflow: hidden;
+  touch-action: none;
+}
+
+body {
+  overscroll-behavior: none;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: black;
+  background-color: white;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+a:focus, a:active {
+  outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+svg, img {
+  flex-shrink: 0;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+sup {
+  color: inherit;
+}
+
+b {
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+  max-width: 100%;
+}
+
+.serum {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  padding-left: 24px;
+  padding-top: 100px;
+  background: url("images/top-left-arrow.png") no-repeat left 301px top 105px, url("images/bottom-left-arrow.png") no-repeat left 301px top 535px, url("images/top-right-arrow.png") no-repeat left 691px top 97px, url("images/bottom-right-arrow.png") no-repeat left 645px top 525px, url("images/bg.jpg") no-repeat center top 60px;
+  background-color: #fbfbfb;
+  background-size: 86px auto, 84px auto, 180px auto, 220px auto, 1100px auto;
+}
+.serum__wrap {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fbfbfb;
+}
+.serum__item {
+  position: absolute;
+  color: #232929;
+}
+.serum__item:nth-child(odd) {
+  left: 14px;
+  width: 282px;
+  text-align: right;
+}
+.serum__item:nth-child(even) {
+  right: 20px;
+  width: 242px;
+}
+.serum__item:nth-child(3) span, .serum__item:nth-child(4) span {
+  padding: 7px 30px;
+}
+.serum__item:nth-child(2) {
+  top: 94px;
+}
+.serum__item:nth-child(3) {
+  top: 530px;
+}
+.serum__item:nth-child(4) {
+  top: 518px;
+}
+.serum__item b {
+  color: #000;
+}
+.serum__item span {
+  display: inline-flex;
+  text-align: center;
+  background: #78bd48;
+  color: #fff;
+  margin-top: 14px;
+  padding: 3px 11px;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=main.css.map */
